@@ -1,0 +1,431 @@
+Starting CARLA server: CUDA_VISIBLE_DEVICES=1 VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json /scratch/mh2803/simlingo/software/software/carla0915/CarlaUE4.sh -RenderOffScreen -nosound -graphicsadapter=1 -carla-rpc-port=34045
+CARLA server PID: 1545977, returncode: None (log: /scratch/mh2803/simlingo/results/0722/grpo_stable_reasoning_nolow_0722_075_1200steps/folder4/res/carla_server_34045.log)
+load_world success , attempts=0
+traffic_manager init success, try_time=0
+ScenarioManager created successfully
+Problem reading checkpoint. Found no data
+
+[1m========= Preparing RouteScenario_17655 (repetition 0) =========[0m
+[1m> Loading the world[0m
+[1m> Setting up the agent[0m
+Agent setup timeout: 600.0s (model loading may take several minutes)
+path to conf file: /scratch/mh2803/simlingo/checkpoint/grpo_stable_reasoning_nolow_0722_075_1200steps/checkpoints/step1000.ckpt/pytorch_model.pt+RouteScenario_17655_rep0_Town12_SequentialLaneChange_1_0_07_23_00_11_57
+Config path: /scratch/mh2803/simlingo/checkpoint/grpo_stable_reasoning_nolow_0722_075_1200steps/checkpoints/step1000.ckpt/pytorch_model.pt
+Save path root: RouteScenario_17655_rep0_Town12_SequentialLaneChange_1_0_07_23_00_11_57
+Loading config from: /scratch/mh2803/simlingo/checkpoint/grpo_stable_reasoning_nolow_0722_075_1200steps/.hydra/config.yaml
+[EGO_HISTORY] use=False num_points=3 frame_interval=1 -> tick_step=5
+[91mUsing OpenGVLab/InternVL2-1B as the image encoder.[0m
+Using PEFT model
+trainable params: 8,798,208 || all params: 638,462,080 || trainable%: 1.3780
+[4Hz-REASONING] reasoning 每 3 tick 重算一次(waypoints 仍每 tick)
+[1m> Running the route[0m
+=== [Agent] -- Wallclock = 2026-07-23 00:12:53.700 -- System time = 0.000 -- Game time = 0.050 -- Ratio = 0.000x
+[TARGET_POINT] step=0 ego_target_point=(40.55, 0.23) ego_next_target_point=(45.60, -3.27)
+[DEBUG PROMPT] Step 0: full_prompt='Current speed: 0.0 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+=== [Agent] -- Wallclock = 2026-07-23 00:12:54.367 -- System time = 0.667 -- Game time = 0.100 -- Ratio = 0.150x
+[DIAGNOSTIC] Model device: cuda:0
+[DIAGNOSTIC] CUDA available: True
+[DIAGNOSTIC] Current device: 0
+[LLM sampling] mode=greedy(argmax) COT_TEMPERATURE=0.0 COT_TOP_K=None COT_TOP_P=0.9
+=== [Agent] -- Wallclock = 2026-07-23 00:12:56.444 -- System time = 2.744 -- Game time = 0.150 -- Ratio = 0.055x
+=== [Agent] -- Wallclock = 2026-07-23 00:12:56.618 -- System time = 2.918 -- Game time = 0.200 -- Ratio = 0.069x
+=== [Agent] -- Wallclock = 2026-07-23 00:12:57.484 -- System time = 3.784 -- Game time = 0.250 -- Ratio = 0.066x
+=== [Agent] -- Wallclock = 2026-07-23 00:12:57.675 -- System time = 3.976 -- Game time = 0.300 -- Ratio = 0.075x
+=== [Agent] -- Wallclock = 2026-07-23 00:12:57.880 -- System time = 4.181 -- Game time = 0.350 -- Ratio = 0.084x
+=== [Agent] -- Wallclock = 2026-07-23 00:12:58.794 -- System time = 5.095 -- Game time = 0.400 -- Ratio = 0.079x
+=== [Agent] -- Wallclock = 2026-07-23 00:12:58.966 -- System time = 5.267 -- Game time = 0.450 -- Ratio = 0.085x
+=== [Agent] -- Wallclock = 2026-07-23 00:12:59.146 -- System time = 5.447 -- Game time = 0.500 -- Ratio = 0.092x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:00.000 -- System time = 6.300 -- Game time = 0.550 -- Ratio = 0.087x
+[TARGET_POINT] step=10 ego_target_point=(40.16, 0.15) ego_next_target_point=(45.20, -3.35)
+[DEBUG PROMPT] Step 10: full_prompt='Current speed: -0.0 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 10: total=0.11s, tick=0.05s, model=0.06s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:13:00.176 -- System time = 6.476 -- Game time = 0.600 -- Ratio = 0.093x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:00.348 -- System time = 6.649 -- Game time = 0.650 -- Ratio = 0.098x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:01.240 -- System time = 7.540 -- Game time = 0.700 -- Ratio = 0.093x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:01.410 -- System time = 7.711 -- Game time = 0.750 -- Ratio = 0.097x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:01.575 -- System time = 7.876 -- Game time = 0.800 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:02.421 -- System time = 8.722 -- Game time = 0.850 -- Ratio = 0.097x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:02.594 -- System time = 8.894 -- Game time = 0.900 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:02.777 -- System time = 9.077 -- Game time = 0.950 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:03.704 -- System time = 10.004 -- Game time = 1.000 -- Ratio = 0.100x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:03.863 -- System time = 10.163 -- Game time = 1.050 -- Ratio = 0.103x
+[TARGET_POINT] step=20 ego_target_point=(39.98, 0.18) ego_next_target_point=(45.03, -3.32)
+[DEBUG PROMPT] Step 20: full_prompt='Current speed: 2.6 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 20: total=0.35s, tick=0.05s, model=0.05s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:13:04.275 -- System time = 10.576 -- Game time = 1.100 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:05.193 -- System time = 11.494 -- Game time = 1.150 -- Ratio = 0.100x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:05.355 -- System time = 11.655 -- Game time = 1.200 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:05.529 -- System time = 11.830 -- Game time = 1.250 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:06.417 -- System time = 12.717 -- Game time = 1.300 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:06.578 -- System time = 12.878 -- Game time = 1.350 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:06.753 -- System time = 13.054 -- Game time = 1.400 -- Ratio = 0.107x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:07.696 -- System time = 13.997 -- Game time = 1.450 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:07.877 -- System time = 14.177 -- Game time = 1.500 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:08.077 -- System time = 14.377 -- Game time = 1.550 -- Ratio = 0.108x
+[TARGET_POINT] step=30 ego_target_point=(39.43, 0.38) ego_next_target_point=(44.49, -3.09)
+[DEBUG PROMPT] Step 30: full_prompt='Current speed: 5.6 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 30: total=0.90s, tick=0.04s, model=0.86s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:13:09.041 -- System time = 15.341 -- Game time = 1.600 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:09.223 -- System time = 15.524 -- Game time = 1.650 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:09.415 -- System time = 15.716 -- Game time = 1.700 -- Ratio = 0.108x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:10.378 -- System time = 16.679 -- Game time = 1.750 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:10.558 -- System time = 16.859 -- Game time = 1.800 -- Ratio = 0.107x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:10.730 -- System time = 17.030 -- Game time = 1.850 -- Ratio = 0.109x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:11.619 -- System time = 17.920 -- Game time = 1.900 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:11.849 -- System time = 18.150 -- Game time = 1.950 -- Ratio = 0.107x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:12.092 -- System time = 18.392 -- Game time = 2.000 -- Ratio = 0.109x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:13.034 -- System time = 19.335 -- Game time = 2.050 -- Ratio = 0.106x
+[TARGET_POINT] step=40 ego_target_point=(38.34, 0.29) ego_next_target_point=(43.40, -3.20)
+[DEBUG PROMPT] Step 40: full_prompt='Current speed: 9.0 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 40: total=0.34s, tick=0.05s, model=0.05s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:13:13.444 -- System time = 19.744 -- Game time = 2.100 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:13.635 -- System time = 19.936 -- Game time = 2.150 -- Ratio = 0.108x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:14.664 -- System time = 20.965 -- Game time = 2.200 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:14.862 -- System time = 21.163 -- Game time = 2.250 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:15.053 -- System time = 21.354 -- Game time = 2.300 -- Ratio = 0.108x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:16.190 -- System time = 22.490 -- Game time = 2.350 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:16.369 -- System time = 22.669 -- Game time = 2.400 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:16.557 -- System time = 22.857 -- Game time = 2.450 -- Ratio = 0.107x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:17.710 -- System time = 24.011 -- Game time = 2.500 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:17.889 -- System time = 24.189 -- Game time = 2.550 -- Ratio = 0.105x
+[TARGET_POINT] step=50 ego_target_point=(32.45, 0.15) ego_next_target_point=(37.49, -3.36)
+[DEBUG PROMPT] Step 50: full_prompt='Current speed: 8.9 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 50: total=0.11s, tick=0.05s, model=0.06s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:13:18.072 -- System time = 24.373 -- Game time = 2.600 -- Ratio = 0.107x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:19.120 -- System time = 25.420 -- Game time = 2.650 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:19.296 -- System time = 25.596 -- Game time = 2.700 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:19.490 -- System time = 25.791 -- Game time = 2.750 -- Ratio = 0.107x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:20.450 -- System time = 26.751 -- Game time = 2.800 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:20.620 -- System time = 26.921 -- Game time = 2.850 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:20.802 -- System time = 27.102 -- Game time = 2.900 -- Ratio = 0.107x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:21.734 -- System time = 28.034 -- Game time = 2.950 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:21.932 -- System time = 28.232 -- Game time = 3.000 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:22.134 -- System time = 28.435 -- Game time = 3.050 -- Ratio = 0.107x
+[TARGET_POINT] step=60 ego_target_point=(28.15, -0.25) ego_next_target_point=(33.14, -3.82)
+[DEBUG PROMPT] Step 60: full_prompt='Current speed: 6.5 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 60: total=1.09s, tick=0.06s, model=0.79s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:13:23.309 -- System time = 29.609 -- Game time = 3.100 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:23.471 -- System time = 29.772 -- Game time = 3.150 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:23.635 -- System time = 29.936 -- Game time = 3.200 -- Ratio = 0.107x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:24.502 -- System time = 30.803 -- Game time = 3.250 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:24.696 -- System time = 30.996 -- Game time = 3.300 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:24.885 -- System time = 31.185 -- Game time = 3.350 -- Ratio = 0.107x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:25.764 -- System time = 32.064 -- Game time = 3.400 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:25.948 -- System time = 32.249 -- Game time = 3.450 -- Ratio = 0.107x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:26.136 -- System time = 32.437 -- Game time = 3.500 -- Ratio = 0.108x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:27.218 -- System time = 33.519 -- Game time = 3.550 -- Ratio = 0.106x
+[TARGET_POINT] step=70 ego_target_point=(23.73, 0.13) ego_next_target_point=(28.77, -3.37)
+[DEBUG PROMPT] Step 70: full_prompt='Current speed: 9.2 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 70: total=0.12s, tick=0.05s, model=0.07s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:13:27.407 -- System time = 33.707 -- Game time = 3.600 -- Ratio = 0.107x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:27.613 -- System time = 33.913 -- Game time = 3.650 -- Ratio = 0.108x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:28.637 -- System time = 34.937 -- Game time = 3.700 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:28.830 -- System time = 35.130 -- Game time = 3.750 -- Ratio = 0.107x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:29.019 -- System time = 35.320 -- Game time = 3.800 -- Ratio = 0.108x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:30.149 -- System time = 36.450 -- Game time = 3.850 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:30.319 -- System time = 36.620 -- Game time = 3.900 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:30.498 -- System time = 36.799 -- Game time = 3.950 -- Ratio = 0.107x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:31.540 -- System time = 37.840 -- Game time = 4.000 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:31.723 -- System time = 38.023 -- Game time = 4.050 -- Ratio = 0.107x
+[TARGET_POINT] step=80 ego_target_point=(19.15, 0.21) ego_next_target_point=(24.22, -3.25)
+[DEBUG PROMPT] Step 80: full_prompt='Current speed: 6.7 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 80: total=0.35s, tick=0.05s, model=0.07s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:13:32.135 -- System time = 38.436 -- Game time = 4.100 -- Ratio = 0.107x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:33.208 -- System time = 39.508 -- Game time = 4.150 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:33.400 -- System time = 39.700 -- Game time = 4.200 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:33.675 -- System time = 39.975 -- Game time = 4.250 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:34.686 -- System time = 40.986 -- Game time = 4.300 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:34.862 -- System time = 41.163 -- Game time = 4.350 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:35.048 -- System time = 41.349 -- Game time = 4.400 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:36.101 -- System time = 42.401 -- Game time = 4.450 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:36.298 -- System time = 42.598 -- Game time = 4.500 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:36.524 -- System time = 42.824 -- Game time = 4.550 -- Ratio = 0.106x
+[TARGET_POINT] step=90 ego_target_point=(15.40, -0.08) ego_next_target_point=(20.42, -3.62)
+[DEBUG PROMPT] Step 90: full_prompt='Current speed: 7.4 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 90: total=0.98s, tick=0.05s, model=0.93s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:13:37.584 -- System time = 43.885 -- Game time = 4.600 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:37.784 -- System time = 44.084 -- Game time = 4.650 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:37.988 -- System time = 44.289 -- Game time = 4.700 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:39.054 -- System time = 45.355 -- Game time = 4.750 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:39.250 -- System time = 45.550 -- Game time = 4.800 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:39.453 -- System time = 45.753 -- Game time = 4.850 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:40.510 -- System time = 46.810 -- Game time = 4.900 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:40.685 -- System time = 46.986 -- Game time = 4.950 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:40.866 -- System time = 47.167 -- Game time = 5.000 -- Ratio = 0.106x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:41.975 -- System time = 48.275 -- Game time = 5.050 -- Ratio = 0.105x
+[TARGET_POINT] step=100 ego_target_point=(10.81, -0.07) ego_next_target_point=(15.84, -3.60)
+[DEBUG PROMPT] Step 100: full_prompt='Current speed: 7.9 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[RAW_LANG] step=100 chars=91 language=['Follow the route. Decelerate to stay behind the orange car that is to the front. Waypoints:']
+[TIMING] Step 100: total=0.35s, tick=0.05s, model=0.07s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:13:42.395 -- System time = 48.695 -- Game time = 5.100 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:42.641 -- System time = 48.941 -- Game time = 5.150 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:43.817 -- System time = 50.117 -- Game time = 5.200 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:44.006 -- System time = 50.306 -- Game time = 5.250 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:44.191 -- System time = 50.492 -- Game time = 5.300 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:45.257 -- System time = 51.557 -- Game time = 5.350 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:45.446 -- System time = 51.747 -- Game time = 5.400 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:45.651 -- System time = 51.951 -- Game time = 5.450 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:46.687 -- System time = 52.987 -- Game time = 5.500 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:46.872 -- System time = 53.172 -- Game time = 5.550 -- Ratio = 0.104x
+[TARGET_POINT] step=110 ego_target_point=(12.32, -4.06) ego_next_target_point=(47.33, -5.22)
+[DEBUG PROMPT] Step 110: full_prompt='Current speed: 6.6 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 110: total=0.13s, tick=0.05s, model=0.07s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:13:47.077 -- System time = 53.377 -- Game time = 5.600 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:48.358 -- System time = 54.659 -- Game time = 5.650 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:48.517 -- System time = 54.817 -- Game time = 5.700 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:48.698 -- System time = 54.999 -- Game time = 5.750 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:50.011 -- System time = 56.312 -- Game time = 5.800 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:50.162 -- System time = 56.463 -- Game time = 5.850 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:50.314 -- System time = 56.614 -- Game time = 5.900 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:51.488 -- System time = 57.789 -- Game time = 5.950 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:51.683 -- System time = 57.983 -- Game time = 6.000 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:51.865 -- System time = 58.166 -- Game time = 6.050 -- Ratio = 0.104x
+[TARGET_POINT] step=120 ego_target_point=(8.80, -2.96) ego_next_target_point=(43.76, -0.83)
+[DEBUG PROMPT] Step 120: full_prompt='Current speed: 7.0 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 120: total=1.17s, tick=0.05s, model=0.88s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:13:53.113 -- System time = 59.414 -- Game time = 6.100 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:53.261 -- System time = 59.562 -- Game time = 6.150 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:53.438 -- System time = 59.738 -- Game time = 6.200 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:54.306 -- System time = 60.607 -- Game time = 6.250 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:54.466 -- System time = 60.766 -- Game time = 6.300 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:54.670 -- System time = 60.970 -- Game time = 6.350 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:56.222 -- System time = 62.523 -- Game time = 6.400 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:56.422 -- System time = 62.722 -- Game time = 6.450 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:56.606 -- System time = 62.906 -- Game time = 6.500 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:57.668 -- System time = 63.968 -- Game time = 6.550 -- Ratio = 0.102x
+[TARGET_POINT] step=130 ego_target_point=(40.78, 4.24) ego_next_target_point=(46.17, 1.66)
+[DEBUG PROMPT] Step 130: full_prompt='Current speed: 3.9 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 130: total=0.14s, tick=0.04s, model=0.09s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:13:57.877 -- System time = 64.177 -- Game time = 6.600 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:58.074 -- System time = 64.374 -- Game time = 6.650 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:59.421 -- System time = 65.721 -- Game time = 6.700 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:59.611 -- System time = 65.912 -- Game time = 6.750 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:13:59.796 -- System time = 66.096 -- Game time = 6.800 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:00.833 -- System time = 67.134 -- Game time = 6.850 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:01.047 -- System time = 67.348 -- Game time = 6.900 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:01.233 -- System time = 67.533 -- Game time = 6.950 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:02.520 -- System time = 68.821 -- Game time = 7.000 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:02.734 -- System time = 69.035 -- Game time = 7.050 -- Ratio = 0.102x
+[TARGET_POINT] step=140 ego_target_point=(38.21, -5.93) ego_next_target_point=(42.79, -9.76)
+[DEBUG PROMPT] Step 140: full_prompt='Current speed: 5.6 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 140: total=0.37s, tick=0.04s, model=0.08s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:14:03.169 -- System time = 69.469 -- Game time = 7.100 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:04.248 -- System time = 70.549 -- Game time = 7.150 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:04.439 -- System time = 70.739 -- Game time = 7.200 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:04.631 -- System time = 70.931 -- Game time = 7.250 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:05.713 -- System time = 72.013 -- Game time = 7.300 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:05.932 -- System time = 72.232 -- Game time = 7.350 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:06.140 -- System time = 72.440 -- Game time = 7.400 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:07.179 -- System time = 73.480 -- Game time = 7.450 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:07.403 -- System time = 73.704 -- Game time = 7.500 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:07.615 -- System time = 73.916 -- Game time = 7.550 -- Ratio = 0.102x
+[TARGET_POINT] step=150 ego_target_point=(34.67, -4.46) ego_next_target_point=(39.40, -8.09)
+[DEBUG PROMPT] Step 150: full_prompt='Current speed: 8.9 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 150: total=0.98s, tick=0.05s, model=0.93s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:14:08.675 -- System time = 74.975 -- Game time = 7.600 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:08.878 -- System time = 75.178 -- Game time = 7.650 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:09.106 -- System time = 75.407 -- Game time = 7.700 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:10.144 -- System time = 76.444 -- Game time = 7.750 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:10.352 -- System time = 76.652 -- Game time = 7.800 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:10.551 -- System time = 76.852 -- Game time = 7.850 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:11.927 -- System time = 78.228 -- Game time = 7.900 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:12.161 -- System time = 78.462 -- Game time = 7.950 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:12.358 -- System time = 78.659 -- Game time = 8.000 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:13.704 -- System time = 80.004 -- Game time = 8.050 -- Ratio = 0.101x
+[TARGET_POINT] step=160 ego_target_point=(29.51, -3.13) ego_next_target_point=(34.38, -6.59)
+[DEBUG PROMPT] Step 160: full_prompt='Current speed: 12.1 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 160: total=0.37s, tick=0.04s, model=0.06s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:14:14.148 -- System time = 80.449 -- Game time = 8.100 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:14.359 -- System time = 80.659 -- Game time = 8.150 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:15.448 -- System time = 81.748 -- Game time = 8.200 -- Ratio = 0.100x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:15.652 -- System time = 81.953 -- Game time = 8.250 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:15.855 -- System time = 82.155 -- Game time = 8.300 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:16.937 -- System time = 83.238 -- Game time = 8.350 -- Ratio = 0.100x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:17.148 -- System time = 83.448 -- Game time = 8.400 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:17.328 -- System time = 83.628 -- Game time = 8.450 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:18.334 -- System time = 84.635 -- Game time = 8.500 -- Ratio = 0.100x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:18.510 -- System time = 84.811 -- Game time = 8.550 -- Ratio = 0.101x
+[TARGET_POINT] step=170 ego_target_point=(22.83, -3.04) ego_next_target_point=(27.70, -6.49)
+[DEBUG PROMPT] Step 170: full_prompt='Current speed: 14.0 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 170: total=0.19s, tick=0.10s, model=0.08s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:14:18.862 -- System time = 85.163 -- Game time = 8.600 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:19.898 -- System time = 86.199 -- Game time = 8.650 -- Ratio = 0.100x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:20.071 -- System time = 86.372 -- Game time = 8.700 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:20.271 -- System time = 86.572 -- Game time = 8.750 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:21.308 -- System time = 87.609 -- Game time = 8.800 -- Ratio = 0.100x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:21.475 -- System time = 87.776 -- Game time = 8.850 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:21.658 -- System time = 87.959 -- Game time = 8.900 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:22.652 -- System time = 88.953 -- Game time = 8.950 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:22.859 -- System time = 89.160 -- Game time = 9.000 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:23.043 -- System time = 89.343 -- Game time = 9.050 -- Ratio = 0.101x
+[TARGET_POINT] step=180 ego_target_point=(15.68, -3.06) ego_next_target_point=(20.56, -6.50)
+[DEBUG PROMPT] Step 180: full_prompt='Current speed: 14.1 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 180: total=1.19s, tick=0.05s, model=0.88s, control=0.01s
+=== [Agent] -- Wallclock = 2026-07-23 00:14:24.298 -- System time = 90.598 -- Game time = 9.100 -- Ratio = 0.100x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:24.475 -- System time = 90.776 -- Game time = 9.150 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:24.645 -- System time = 90.946 -- Game time = 9.200 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:25.857 -- System time = 92.157 -- Game time = 9.250 -- Ratio = 0.100x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:26.044 -- System time = 92.345 -- Game time = 9.300 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:26.245 -- System time = 92.546 -- Game time = 9.350 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:27.437 -- System time = 93.738 -- Game time = 9.400 -- Ratio = 0.100x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:27.630 -- System time = 93.930 -- Game time = 9.450 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:27.848 -- System time = 94.148 -- Game time = 9.500 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:28.730 -- System time = 95.030 -- Game time = 9.550 -- Ratio = 0.100x
+[TARGET_POINT] step=190 ego_target_point=(9.60, -0.57) ego_next_target_point=(15.07, -2.96)
+[DEBUG PROMPT] Step 190: full_prompt='Current speed: 11.0 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 190: total=0.18s, tick=0.04s, model=0.12s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:14:28.985 -- System time = 95.285 -- Game time = 9.600 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:29.220 -- System time = 95.520 -- Game time = 9.650 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:30.200 -- System time = 96.500 -- Game time = 9.700 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:30.436 -- System time = 96.737 -- Game time = 9.750 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:30.619 -- System time = 96.920 -- Game time = 9.800 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:31.814 -- System time = 98.114 -- Game time = 9.850 -- Ratio = 0.100x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:31.986 -- System time = 98.287 -- Game time = 9.900 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:32.162 -- System time = 98.462 -- Game time = 9.950 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:33.065 -- System time = 99.365 -- Game time = 10.000 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:33.241 -- System time = 99.541 -- Game time = 10.050 -- Ratio = 0.101x
+[TARGET_POINT] step=200 ego_target_point=(9.66, -4.11) ego_next_target_point=(43.47, -0.47)
+[DEBUG PROMPT] Step 200: full_prompt='Current speed: 9.9 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[RAW_LANG] step=200 chars=82 language=['Prepare to do a lane change. Accelerate to drive with the target speed. Waypoints:']
+[TIMING] Step 200: total=0.35s, tick=0.05s, model=0.06s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:14:33.659 -- System time = 99.959 -- Game time = 10.100 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:34.668 -- System time = 100.969 -- Game time = 10.150 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:34.869 -- System time = 101.170 -- Game time = 10.200 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:35.045 -- System time = 101.346 -- Game time = 10.250 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:36.004 -- System time = 102.304 -- Game time = 10.300 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:36.214 -- System time = 102.514 -- Game time = 10.350 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:36.403 -- System time = 102.703 -- Game time = 10.400 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:37.267 -- System time = 103.568 -- Game time = 10.450 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:37.451 -- System time = 103.751 -- Game time = 10.500 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:37.629 -- System time = 103.929 -- Game time = 10.550 -- Ratio = 0.102x
+[TARGET_POINT] step=210 ego_target_point=(38.61, -1.32) ego_next_target_point=(38.61, -1.32)
+[DEBUG PROMPT] Step 210: full_prompt='Current speed: 10.1 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 210: total=0.94s, tick=0.04s, model=0.89s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:14:38.631 -- System time = 104.932 -- Game time = 10.600 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:38.805 -- System time = 105.106 -- Game time = 10.650 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:39.005 -- System time = 105.305 -- Game time = 10.700 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:39.817 -- System time = 106.117 -- Game time = 10.750 -- Ratio = 0.101x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:39.996 -- System time = 106.296 -- Game time = 10.800 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:40.177 -- System time = 106.478 -- Game time = 10.850 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:40.977 -- System time = 107.277 -- Game time = 10.900 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:41.147 -- System time = 107.448 -- Game time = 10.950 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:41.318 -- System time = 107.619 -- Game time = 11.000 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:42.319 -- System time = 108.620 -- Game time = 11.050 -- Ratio = 0.102x
+[TARGET_POINT] step=220 ego_target_point=(29.44, 18.01) ego_next_target_point=(29.44, 18.01)
+[DEBUG PROMPT] Step 220: full_prompt='Current speed: 8.9 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 220: total=0.35s, tick=0.04s, model=0.06s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:14:42.728 -- System time = 109.028 -- Game time = 11.100 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:42.893 -- System time = 109.193 -- Game time = 11.150 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:43.695 -- System time = 109.995 -- Game time = 11.200 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:43.871 -- System time = 110.171 -- Game time = 11.250 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:44.046 -- System time = 110.347 -- Game time = 11.300 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:44.831 -- System time = 111.132 -- Game time = 11.350 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:44.992 -- System time = 111.292 -- Game time = 11.400 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:45.179 -- System time = 111.480 -- Game time = 11.450 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:45.987 -- System time = 112.287 -- Game time = 11.500 -- Ratio = 0.102x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:46.161 -- System time = 112.461 -- Game time = 11.550 -- Ratio = 0.103x
+[TARGET_POINT] step=230 ego_target_point=(29.87, -2.45) ego_next_target_point=(29.87, -2.45)
+[DEBUG PROMPT] Step 230: full_prompt='Current speed: 9.0 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 230: total=0.11s, tick=0.04s, model=0.06s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:14:46.337 -- System time = 112.637 -- Game time = 11.600 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:47.143 -- System time = 113.443 -- Game time = 11.650 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:47.327 -- System time = 113.627 -- Game time = 11.700 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:47.519 -- System time = 113.819 -- Game time = 11.750 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:48.341 -- System time = 114.642 -- Game time = 11.800 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:48.529 -- System time = 114.830 -- Game time = 11.850 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:48.752 -- System time = 115.053 -- Game time = 11.900 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:49.553 -- System time = 115.853 -- Game time = 11.950 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:49.797 -- System time = 116.098 -- Game time = 12.000 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:50.005 -- System time = 116.306 -- Game time = 12.050 -- Ratio = 0.104x
+[TARGET_POINT] step=240 ego_target_point=(13.44, -22.87) ego_next_target_point=(13.44, -22.87)
+[DEBUG PROMPT] Step 240: full_prompt='Current speed: 10.6 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 240: total=1.19s, tick=0.05s, model=0.89s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:14:51.277 -- System time = 117.578 -- Game time = 12.100 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:51.481 -- System time = 117.782 -- Game time = 12.150 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:51.689 -- System time = 117.989 -- Game time = 12.200 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:52.490 -- System time = 118.791 -- Game time = 12.250 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:52.713 -- System time = 119.013 -- Game time = 12.300 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:52.895 -- System time = 119.195 -- Game time = 12.350 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:53.678 -- System time = 119.979 -- Game time = 12.400 -- Ratio = 0.103x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:53.883 -- System time = 120.184 -- Game time = 12.450 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:54.076 -- System time = 120.376 -- Game time = 12.500 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:55.131 -- System time = 121.431 -- Game time = 12.550 -- Ratio = 0.103x
+[TARGET_POINT] step=250 ego_target_point=(20.46, -9.12) ego_next_target_point=(20.46, -9.12)
+[DEBUG PROMPT] Step 250: full_prompt='Current speed: 8.9 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 250: total=0.11s, tick=0.04s, model=0.06s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:14:55.314 -- System time = 121.615 -- Game time = 12.600 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:55.494 -- System time = 121.795 -- Game time = 12.650 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:56.294 -- System time = 122.594 -- Game time = 12.700 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:56.471 -- System time = 122.772 -- Game time = 12.750 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:56.643 -- System time = 122.943 -- Game time = 12.800 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:57.426 -- System time = 123.726 -- Game time = 12.850 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:57.598 -- System time = 123.899 -- Game time = 12.900 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:57.784 -- System time = 124.084 -- Game time = 12.950 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:58.680 -- System time = 124.980 -- Game time = 13.000 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:14:58.869 -- System time = 125.170 -- Game time = 13.050 -- Ratio = 0.104x
+[TARGET_POINT] step=260 ego_target_point=(16.67, -5.43) ego_next_target_point=(16.67, -5.43)
+[DEBUG PROMPT] Step 260: full_prompt='Current speed: 11.3 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 260: total=0.36s, tick=0.05s, model=0.06s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:14:59.296 -- System time = 125.597 -- Game time = 13.100 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:15:00.060 -- System time = 126.360 -- Game time = 13.150 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:15:00.240 -- System time = 126.541 -- Game time = 13.200 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:15:00.424 -- System time = 126.724 -- Game time = 13.250 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:15:01.204 -- System time = 127.504 -- Game time = 13.300 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:15:01.398 -- System time = 127.698 -- Game time = 13.350 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:15:01.678 -- System time = 127.978 -- Game time = 13.400 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:15:02.762 -- System time = 129.062 -- Game time = 13.450 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:15:02.956 -- System time = 129.257 -- Game time = 13.500 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:15:03.134 -- System time = 129.434 -- Game time = 13.550 -- Ratio = 0.105x
+[TARGET_POINT] step=270 ego_target_point=(10.66, -5.12) ego_next_target_point=(10.66, -5.12)
+[DEBUG PROMPT] Step 270: full_prompt='Current speed: 12.8 m/s. Target waypoint: <TARGET_POINT><TARGET_POINT>. What should the ego do next?'
+[TIMING] Step 270: total=0.87s, tick=0.04s, model=0.82s, control=0.00s
+=== [Agent] -- Wallclock = 2026-07-23 00:15:04.098 -- System time = 130.398 -- Game time = 13.600 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:15:04.286 -- System time = 130.586 -- Game time = 13.650 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:15:04.482 -- System time = 130.782 -- Game time = 13.700 -- Ratio = 0.105x
+=== [Agent] -- Wallclock = 2026-07-23 00:15:05.426 -- System time = 131.727 -- Game time = 13.750 -- Ratio = 0.104x
+=== [Agent] -- Wallclock = 2026-07-23 00:15:05.603 -- System time = 131.903 -- Game time = 13.800 -- Ratio = 0.105x
+[1m> Stopping the route[0m
+
+[1m========= Results of RouteScenario_17655 (repetition 0) ------ [91mFAILURE[0m [1m=========[0m
+
+╒═══════════════════════╤═════════════════════╕
+│ Start Time            │ 2026-07-23 00:12:53 │
+├───────────────────────┼─────────────────────┤
+│ End Time              │ 2026-07-23 00:15:06 │
+├───────────────────────┼─────────────────────┤
+│ System Time           │ 133.18s             │
+├───────────────────────┼─────────────────────┤
+│ Game Time             │ 13.8s               │
+├───────────────────────┼─────────────────────┤
+│ Ratio (Game / System) │ 0.104               │
+╘═══════════════════════╧═════════════════════╛
+
+╒═══════════════════════╤═════════╤══════════╕
+│ Criterion             │ Result  │ Value    │
+├───────────────────────┼─────────┼──────────┤
+│ RouteCompletionTest   │ [92mSUCCESS[0m │ 100 %    │
+├───────────────────────┼─────────┼──────────┤
+│ OutsideRouteLanesTest │ [92mSUCCESS[0m │ 0 %      │
+├───────────────────────┼─────────┼──────────┤
+│ CollisionTest         │ [91mFAILURE[0m │ 1 times  │
+├───────────────────────┼─────────┼──────────┤
+│ RunningRedLightTest   │ [92mSUCCESS[0m │ 0 times  │
+├───────────────────────┼─────────┼──────────┤
+│ RunningStopTest       │ [92mSUCCESS[0m │ 0 times  │
+├───────────────────────┼─────────┼──────────┤
+│ MinSpeedTest          │ [91mFAILURE[0m │ 108.33 % │
+├───────────────────────┼─────────┼──────────┤
+│ InRouteTest           │ [92mSUCCESS[0m │          │
+├───────────────────────┼─────────┼──────────┤
+│ AgentBlockedTest      │ [92mSUCCESS[0m │          │
+├───────────────────────┼─────────┼──────────┤
+│ ScenarioTimeoutTest   │ [92mSUCCESS[0m │ 0 times  │
+├───────────────────────┼─────────┼──────────┤
+│ Timeout               │ [92mSUCCESS[0m │          │
+╘═══════════════════════╧═════════╧══════════╛
+
+[1m> Registering the route statistics[0m
+[LOG] Saved log data to /scratch/mh2803/simlingo/results/0722/grpo_stable_reasoning_nolow_0722_075_1200steps/folder4/viz/121/RouteScenario_17655_rep0_Town12_SequentialLaneChange_1_0_07_23_00_11_57/log.json (275 steps)
+False
+cost time=190.18395042419434
+[1m> Registering the global statistics[0m
